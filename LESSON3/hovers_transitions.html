@@ -1,0 +1,72 @@
+<style>
+.subscribe-button {
+    background-color: red;
+    color:white;
+    border:none;
+    height:30px;/*Here px is pixel*/
+    border-radius:10px;
+  cursor: pointer;
+  margin-right: 8px;
+
+}
+.join-button {
+        background-color: white;
+        border-color:rgb(41,118,211);
+        border-style: solid;
+        border-width: 1px;
+        color:rgb(41,118,211);
+        height:36px;
+        width:60px;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-right: 8px;
+        transition: opacity 0.15s;
+        transition: color 0.1s;
+}
+.tweet-button {
+        background-color: rgba(2, 158, 255);
+        color:white;
+        height:36px;
+        width:74px;
+        border:none;
+        border-radius: 30px;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+        transition: box-shadow 0.1s,color 0.1s;
+        
+}
+.subscribe-button:hover {
+    /*hover is a pueudo class.Pseudo class is nothing but it adds extra styles in certain situations*/
+    opacity:0.6;
+    /*Opacity is used to fade out an element.It value lies between 0 and 1*/
+ 
+}
+.subscribe-button:active {
+    /*Active pseudo code make changes when we click on the buttion*/
+   opacity:0.5;
+}
+.join-button:hover {
+    background-color: rgb(41,118,211);
+    color: white;
+}
+.join-button:active {
+    opacity: 0.7;
+}
+.tweet-button:hover {
+    box-shadow:5px 5px 10px rgba(0,0,0,0.15);
+        /*For shadowing,
+        We use box-shadow.We set 4 values for this property.
+        1st value represents horizontal position.2nd value sets vertical position of the shadow.3rd value is blur.
+        4th value is color.We are going to use new way of measuring the color called rgba().rgb represents red,green,blue and a value means opasity of the color*/
+}
+</style>
+<button class="subscribe-button">
+    Subscribe
+</button>
+<button class="join-button">
+    JOIN
+</button>
+<button class="tweet-button">
+    Tweet
+</button>
